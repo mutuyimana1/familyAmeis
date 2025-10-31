@@ -101,7 +101,9 @@ export default function Header() {
               ))}
             </nav>
             <div className="mt-auto p-6 border-t">
-              <Button className="w-full">Book an Appointment</Button>
+                <Button className="w-full" asChild>
+                    <Link href="/contact">Book an Appointment</Link>
+                </Button>
             </div>
         </div>
       </SheetContent>
@@ -110,16 +112,18 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "shadow-lg" : ""
+      "sticky top-0 left-0 right-0 z-50 transition-all duration-300",
+      isScrolled ? "shadow-lg bg-background/80 backdrop-blur-sm" : ""
     )}>
       <TopBar />
-      <div className="bg-background/80 backdrop-blur-sm">
+      <div className={cn("bg-background/80 backdrop-blur-sm", isScrolled && "bg-transparent backdrop-blur-none")}>
         <div className="container mx-auto px-4 flex justify-between items-center h-20">
           <Logo />
           <MainNav />
           <div className="flex items-center gap-4">
-            <Button className="hidden md:flex">Book an Appointment</Button>
+            <Button className="hidden md:flex" asChild>
+                <Link href="/contact">Book an Appointment</Link>
+            </Button>
             <MobileNav />
           </div>
         </div>

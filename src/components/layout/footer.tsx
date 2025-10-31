@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
       <div className="bg-secondary">
         <div className="container mx-auto px-4 py-4 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} MediDent Redux. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} MediDent. All Rights Reserved. Built with Firebase Studio.</p>
         </div>
       </div>
     </footer>

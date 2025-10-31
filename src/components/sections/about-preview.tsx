@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle, Stethoscope, Microscope, Users } from 'lucide-react';
@@ -65,8 +66,8 @@ export default function AboutPreviewSection() {
                 </li>
               ))}
             </ul>
-            <Button size="lg" className="mt-4">
-              Learn More About Us
+            <Button size="lg" className="mt-4" asChild>
+              <Link href="/about">Learn More About Us</Link>
             </Button>
           </div>
         </div>

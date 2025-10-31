@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function CtaBar() {
@@ -8,8 +9,8 @@ export default function CtaBar() {
           <h2 className="font-headline text-3xl font-bold text-primary-foreground max-w-2xl">
             Ready for a Healthier, Brighter Smile?
           </h2>
-          <Button size="lg" variant="secondary" className="text-lg shrink-0">
-            Book an Appointment
+          <Button size="lg" variant="secondary" className="text-lg shrink-0" asChild>
+            <Link href="/contact">Book an Appointment</Link>
           </Button>
         </div>
       </div>

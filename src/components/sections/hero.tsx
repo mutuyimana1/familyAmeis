@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button"
@@ -30,7 +31,7 @@ const sliderContent = [
 
 export default function HeroSection() {
     return (
-        <section className="relative pt-[88px] bg-primary">
+        <section className="relative bg-primary">
             <div className="container mx-auto px-0 md:px-4">
                 <div className="relative">
                     <Carousel
@@ -65,7 +66,9 @@ export default function HeroSection() {
                                                     <p className="font-semibold text-accent uppercase tracking-wider">{slide.subtitle}</p>
                                                     <h1 className="font-headline text-4xl md:text-6xl font-bold leading-tight">{slide.title}</h1>
                                                     <p className="text-lg md:text-xl text-gray-200">{slide.description}</p>
-                                                    <Button size="lg" variant="secondary" className="mt-4">Learn More</Button>
+                                                    <Button size="lg" variant="secondary" className="mt-4" asChild>
+                                                        <Link href="/about">Learn More</Link>
+                                                    </Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +82,7 @@ export default function HeroSection() {
                         </div>
                     </Carousel>
 
-                    <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-8 z-10 w-full md:w-auto p-4 md:p-0">
+                    <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-8 z-10 w-full md:w-auto p-4 md:p-0 mt-8 md:mt-0">
                          <AppointmentForm />
                     </div>
                 </div>
