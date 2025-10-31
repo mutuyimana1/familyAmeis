@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, X, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Menu, X, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin, User } from 'lucide-react';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { ToothIcon } from '@/components/icons';
@@ -100,9 +100,15 @@ export default function Header() {
                 </Link>
               ))}
             </nav>
-            <div className="mt-auto p-6 border-t">
+            <div className="mt-auto p-6 border-t space-y-4">
                 <Button className="w-full" asChild>
                     <Link href="/contact">Book an Appointment</Link>
+                </Button>
+                 <Button variant="outline" className="w-full" asChild>
+                    <Link href="/login">
+                        <User className="mr-2 h-4 w-4" />
+                        Login
+                    </Link>
                 </Button>
             </div>
         </div>
@@ -123,6 +129,12 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <Button className="hidden md:flex" asChild>
                 <Link href="/contact">Book an Appointment</Link>
+            </Button>
+            <Button variant="outline" className="hidden md:flex" asChild>
+                <Link href="/login">
+                    <User className="mr-2 h-4 w-4" />
+                    Login
+                </Link>
             </Button>
             <MobileNav />
           </div>
