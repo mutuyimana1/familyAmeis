@@ -2,11 +2,13 @@ import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { services } from '@/lib/data';
 import { ToothIcon } from '@/components/icons';
+import Image from 'next/image';
+import img from "../../assets/images/logo.jpg"
 
 const Logo = () => (
     <Link href="/" className="flex items-center gap-2">
-      <ToothIcon className="h-8 w-8 text-primary" />
-      <span className="text-2xl font-headline font-bold text-primary">MediDent</span>
+      <Image src={img} alt='logo' className="h-40 w-40 text-primary"/>
+      <span className="text-2xl font-headline font-bold text-primary">AFR</span>
     </Link>
   );
 
@@ -19,7 +21,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-muted-foreground text-sm">
-              MediDent is a leading dental clinic dedicated to providing top-quality care. Our experienced team uses the latest technology to ensure your comfort and health.
+              Strong family bonds, and marriage preparation for lasting unions.
             </p>
             <div className="flex items-center gap-4 pt-4">
                 <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook size={20} /></Link>
@@ -49,15 +51,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-primary mt-1 shrink-0" />
-                <span className="text-muted-foreground">123 Dental St, Smileville, USA 12345</span>
+                <span className="text-muted-foreground">AFR kigali nyarugenge</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-primary shrink-0" />
-                <span className="text-muted-foreground">(123) 456-7890</span>
+                <span className="text-muted-foreground">(250) 788 226 986</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary shrink-0" />
-                <span className="text-muted-foreground">info@medident.com</span>
+                <span className="text-muted-foreground">info@afr.com</span>
               </li>
             </ul>
           </div>
@@ -84,7 +86,7 @@ export default function Footer() {
       </div>
       <div className="bg-secondary">
         <div className="container mx-auto px-4 py-4 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} MediDent. All Rights Reserved. Built with Firebase Studio.</p>
+          <p>&copy; {new Date().getFullYear()} AFR. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

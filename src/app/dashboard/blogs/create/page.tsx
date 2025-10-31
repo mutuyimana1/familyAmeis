@@ -51,7 +51,7 @@ export default function CreateBlogPage() {
               id="category"
               type="text"
               className="w-full"
-              placeholder="e.g., Dental Health"
+              placeholder="e.g., Family Health"
             />
           </div>
           <div className="grid gap-3">

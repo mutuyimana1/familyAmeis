@@ -22,7 +22,7 @@ export default function TestimonialsSection() {
             What Our Patients Say
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We take pride in our patients' satisfaction. Here's what some of them have to say about their experience at MediDent.
+            We take pride in our patients' satisfaction. Here's what some of them have to say about their experience at AMIS DE LA FAMILLE AU RWANDA.
           </p>
         </div>
         

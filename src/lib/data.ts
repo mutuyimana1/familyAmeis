@@ -14,26 +14,26 @@ export const navLinks = [
 export const services = [
   {
     icon: ToothIcon,
-    title: 'General Dentistry',
+    title: 'General family',
     description: 'Comprehensive care for all ages, including checkups, cleanings, and fillings.',
-    slug: 'general-dentistry',
+    slug: 'general-family',
   },
   {
     icon: WhiteningIcon,
-    title: 'Teeth Whitening',
+    title: 'family bonds',
     description: 'Brighten your smile with our professional in-office or take-home whitening treatments.',
     slug: 'teeth-whitening',
   },
   {
     icon: DentalImplantIcon,
-    title: 'Dental Implants',
-    description: 'A permanent solution for missing teeth that looks and feels natural.',
-    slug: 'dental-implants',
+    title: 'family Implants',
+    description: 'A permanent solution for missing family that looks and feels natural.',
+    slug: 'family-implants',
   },
   {
     icon: DentalBracesIcon,
     title: 'Orthodontics',
-    description: 'Straighten your teeth and correct your bite with modern braces and aligners.',
+    description: 'Straighten your family and correct your bite with modern braces and aligners.',
     slug: 'orthodontics',
   },
   {
@@ -44,9 +44,9 @@ export const services = [
   },
   {
     icon: DentalCrownIcon,
-    title: 'Cosmetic Dentistry',
+    title: 'Cosmetic family',
     description: 'Enhance your smile with veneers, bonding, and other cosmetic procedures.',
-    slug: 'cosmetic-dentistry',
+    slug: 'cosmetic-family',
   },
 ];
 
@@ -55,7 +55,7 @@ export const doctors = [
   {
     id: 1,
     name: 'Dr. Jessica Taylor',
-    specialty: 'General Dentist',
+    specialty: 'General family',
     image: 'doctor-1',
     social: [
       { icon: Facebook, href: '#' },
@@ -77,7 +77,7 @@ export const doctors = [
   {
     id: 3,
     name: 'Dr. Amanda Bell',
-    specialty: 'Pediatric Dentist',
+    specialty: 'Pediatric family',
     image: 'doctor-3',
     social: [
       { icon: Facebook, href: '#' },
@@ -94,7 +94,7 @@ export const testimonials = [
     location: 'New York',
     image: 'testimonial-1',
     rating: 5,
-    comment: 'The best dental care I have ever had. The staff is friendly and professional. I would highly recommend this clinic to anyone!',
+    comment: 'The best Familly bonds I have ever had. The staff is friendly and professional. I would highly recommend this clinic to anyone!',
   },
   {
     id: 2,
@@ -102,7 +102,7 @@ export const testimonials = [
     location: 'Los Angeles',
     image: 'testimonial-2',
     rating: 5,
-    comment: 'My kids love coming to the dentist now! Dr. Amanda Bell is amazing with children. The whole experience was smooth and stress-free.',
+    comment: 'My kids love coming to the family now! Dr. Amanda Bell is amazing with children. The whole experience was smooth and stress-free.',
   },
   {
     id: 3,
@@ -110,36 +110,36 @@ export const testimonials = [
     location: 'Chicago',
     image: 'testimonial-1',
     rating: 5,
-    comment: 'I got dental implants and the result is fantastic. Dr. Taylor did an incredible job. The process was painless and worth every penny.',
+    comment: 'I got family implants and the result is fantastic. Dr. Taylor did an incredible job. The process was painless and worth every penny.',
   },
 ];
 
 export const blogPosts = [
   {
     id: 1,
-    title: 'The Importance of Regular Dental Check-ups',
-    slug: 'regular-dental-check-ups',
+    title: 'The Importance of Regular family Check-ups',
+    slug: 'regular-family-check-ups',
     date: '2024-07-22',
-    category: 'Dental Health',
-    excerpt: 'Discover why regular visits to your dentist are crucial for maintaining not just your oral health, but your overall well-being...',
+    category: 'family Health',
+    excerpt: 'Discover why regular visits to your family are crucial for maintaining not just your oral health, but your overall well-being...',
     image: 'blog-1',
   },
   {
     id: 2,
-    title: 'Everything You Need to Know About Teeth Whitening',
+    title: 'Everything You Need to Know About family bonds',
     slug: 'about-teeth-whitening',
     date: '2024-07-15',
-    category: 'Cosmetic Dentistry',
-    excerpt: 'Thinking about brightening your smile? Here’s a complete guide to professional teeth whitening options and what you can expect.',
+    category: 'Cosmetic family',
+    excerpt: 'Thinking about brightening your smile? Here’s a complete guide to professional family bonds options and what you can expect.',
     image: 'blog-2',
   },
   {
     id: 3,
-    title: 'Tips for Your Child’s First Dental Visit',
-    slug: 'childs-first-dental-visit',
+    title: 'Tips for Your Child’s First family Visit',
+    slug: 'childs-first-family-visit',
     date: '2024-07-08',
-    category: 'Pediatric Dentistry',
-    excerpt: 'Make your child’s first trip to the dentist a positive experience with these helpful tips for parents.',
+    category: 'Pediatric family',
+    excerpt: 'Make your child’s first trip to the family a positive experience with these helpful tips for parents.',
     image: 'blog-3',
   },
 ];

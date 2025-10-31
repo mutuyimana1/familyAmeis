@@ -1,9 +1,9 @@
-# **App Name**: MediDent Redux
+# **App Name**:AMIS DE LA FAMILLE AU RWANDA
 
 ## Core Features:
 
-- Homepage Replication: Accurately replicate the dentist theme homepage, including all sections, sliders, and content layout
-- Service Pages Duplication: Replicate all service pages (e.g., dental implants, teeth whitening) with identical layout and content.
+- Homepage Replication: Accurately replicate the family theme homepage, including all sections, sliders, and content layout
+- Service Pages Duplication: Replicate all service pages (e.g., family implants, family bonds) with identical layout and content.
 - Appointment Booking Form: Implement a functional appointment booking form, mirroring the original site's form.
 - Contact Page Parity: Ensure the contact page (including map, contact form, and address details) is replicated accurately.
 - Blog Page Imitation: Duplicate the blog layout and individual post designs, dynamically displaying blog content.

@@ -1,29 +1,31 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Stethoscope, Microscope, Users } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { CheckCircle, Stethoscope, Microscope, Users } from "lucide-react";
 
 const features = [
   {
     icon: Stethoscope,
-    title: 'Professional Staff',
-    description: 'Our team consists of highly skilled and certified dental professionals.',
+    title: "Professional Staff",
+    description:
+      "Our team consists of highly skilled and certified family professionals.",
   },
   {
     icon: Microscope,
-    title: 'Modern Technology',
-    description: 'We use the latest technology for accurate diagnostics and treatments.',
+    title: "Modern Technology",
+    description:
+      "We use the latest technology for accurate diagnostics and treatments.",
   },
   {
     icon: Users,
-    title: 'Patient-Centered Care',
-    description: 'Your comfort and health are our top priorities.',
+    title: "Patient-Centered Care",
+    description: "Your comfort and health are our top priorities.",
   },
 ];
 
 export default function AboutPreviewSection() {
-  const aboutImage = PlaceHolderImages.find(p => p.id === 'about-preview');
+  const aboutImage = PlaceHolderImages.find((p) => p.id === "about-preview");
 
   return (
     <section className="py-16 md:py-24 bg-card">
@@ -41,17 +43,22 @@ export default function AboutPreviewSection() {
               />
             )}
             <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-6 rounded-lg max-w-xs">
-                <p className="font-headline text-lg font-bold">25+</p>
-                <p>Years of experience in dental care</p>
+              <p className="font-headline text-lg font-bold">25+</p>
+              <p>Years of experience in Familly bonds</p>
             </div>
           </div>
           <div className="space-y-6">
-            <p className="font-semibold text-primary uppercase tracking-wider">Why Choose Us</p>
+            <p className="font-semibold text-primary uppercase tracking-wider">
+              Why Choose Us
+            </p>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Committed to Excellence in Dental Care
+              Committed to Excellence in Familly bonds
             </h2>
             <p className="text-muted-foreground text-lg">
-              At MediDent, we are dedicated to providing the highest standard of dental care in a comfortable and friendly environment. We believe in building lasting relationships with our patients based on trust and exceptional results.
+              At AMIS DE LA FAMILLE AU RWANDA, we are dedicated to providing the highest standard of
+              Familly bonds in a comfortable and friendly environment. We
+              believe in building lasting relationships with our patients based
+              on trust and exceptional results.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (
@@ -60,8 +67,12 @@ export default function AboutPreviewSection() {
                     <feature.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-headline font-semibold text-lg text-primary">{feature.title}</h4>
-                    <p className="text-muted-foreground">{feature.description}</p>
+                    <h4 className="font-headline font-semibold text-lg text-primary">
+                      {feature.title}
+                    </h4>
+                    <p className="text-muted-foreground">
+                      {feature.description}
+                    </p>
                   </div>
                 </li>
               ))}

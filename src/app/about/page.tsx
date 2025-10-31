@@ -11,7 +11,7 @@ export default function AboutPage() {
         title="About Us"
         breadcrumb="About Us"
         imageUrl="/images/page-header.jpg"
-        imageHint="dental tools"
+        imageHint="family tools"
       />
       <AboutPreviewSection />
       <DoctorsSection />

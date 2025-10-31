@@ -9,7 +9,7 @@ export default function ServicesPage() {
         title="Our Services"
         breadcrumb="Services"
         imageUrl="/images/page-header.jpg"
-        imageHint="dental tools"
+        imageHint="family tools"
       />
       <ServicesSection />
       <CtaBar />

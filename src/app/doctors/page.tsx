@@ -9,7 +9,7 @@ export default function DoctorsPage() {
         title="Our Doctors"
         breadcrumb="Doctors"
         imageUrl="/images/page-header.jpg"
-        imageHint="dental tools"
+        imageHint="family tools"
       />
       <DoctorsSection />
       <CtaBar />

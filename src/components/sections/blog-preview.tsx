@@ -18,7 +18,7 @@ export default function BlogPreviewSection() {
             From Our Blog
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Stay informed with the latest news, tips, and insights on dental health from our expert team.
+            Stay informed with the latest news, tips, and insights on family health from our expert team.
           </p>
         </div>
 

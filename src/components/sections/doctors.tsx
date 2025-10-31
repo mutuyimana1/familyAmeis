@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { doctors } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent } from '@/components/ui/card';
+import Image from "next/image";
+import Link from "next/link";
+import { doctors } from "@/lib/data";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function DoctorsSection() {
   return (
@@ -10,18 +10,24 @@ export default function DoctorsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-            Meet Our Expert Dentists
+            Meet Our Expert familys
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Our team of experienced and caring dental professionals is dedicated to providing you with personalized care.
+            Our team of experienced and caring family professionals is dedicated
+            to providing you with personalized care.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {doctors.map((doctor) => {
-            const doctorImage = PlaceHolderImages.find(p => p.id === doctor.image);
+            const doctorImage = PlaceHolderImages.find(
+              (p) => p.id === doctor.image
+            );
             return (
-              <Card key={doctor.id} className="group overflow-hidden text-center">
+              <Card
+                key={doctor.id}
+                className="group overflow-hidden text-center"
+              >
                 <div className="relative aspect-square overflow-hidden">
                   {doctorImage && (
                     <Image
@@ -49,7 +55,9 @@ export default function DoctorsSection() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-headline text-xl font-bold text-primary">{doctor.name}</h3>
+                  <h3 className="font-headline text-xl font-bold text-primary">
+                    {doctor.name}
+                  </h3>
                   <p className="text-primary/80">{doctor.specialty}</p>
                 </CardContent>
               </Card>

@@ -8,11 +8,12 @@ import { Menu, X, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin, Us
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { ToothIcon } from '@/components/icons';
-
+import Image from 'next/image';
+import img from "../../assets/images/logo.jpg"
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
-    <ToothIcon className="h-8 w-8 text-primary" />
-    <span className="text-2xl font-headline font-bold text-primary">MediDent</span>
+    <Image src={img} alt='logo' className="h-20 w-20 text-primary"/>
+    <span className="text-2xl font-headline font-bold text-primary">AFR</span>
   </Link>
 );
 
@@ -34,11 +35,11 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
             <Phone size={16} />
-            <span>(123) 456 7890</span>
+            <span>(250) 788 226 986</span>
           </div>
           <div className="flex items-center gap-2">
             <Mail size={16} />
-            <span>info@medident.com</span>
+            <span>info@amis.com</span>
           </div>
           <div className="flex items-center gap-2">
             <Clock size={16} />

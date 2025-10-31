@@ -9,7 +9,7 @@ export default function ContactPage() {
                 title="Contact Us"
                 breadcrumb="Contact"
                 imageUrl="/images/page-header.jpg"
-                imageHint="dental tools"
+                imageHint="family tools"
             />
             <div className="py-16 md:py-24 bg-background">
                 <div className="container mx-auto px-4">
@@ -28,7 +28,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-headline font-semibold text-xl text-primary">Our Location</h3>
-                                        <p className="text-muted-foreground">123 Dental St, Smileville, USA 12345</p>
+                                        <p className="text-muted-foreground">AFR kigali nyarugenge</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -37,7 +37,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-headline font-semibold text-xl text-primary">Phone Number</h3>
-                                        <p className="text-muted-foreground">(123) 456-7890</p>
+                                        <p className="text-muted-foreground">(250) 788 226 986</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -46,7 +46,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-headline font-semibold text-xl text-primary">Email Address</h3>
-                                        <p className="text-muted-foreground">info@medident.com</p>
+                                        <p className="text-muted-foreground">info@afr.com</p>
                                     </div>
                                 </div>
                             </div>
