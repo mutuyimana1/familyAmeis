@@ -71,6 +71,12 @@
       "description": "Child at the dentist",
       "imageUrl": "https://images.unsplash.com/photo-1758205308106-5760d0227cc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZCUyMGRlbnRpc3R8ZW58MHx8fHwxNzYxODg1MjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "child dentist"
+    },
+    {
+      "id": "page-header",
+      "description": "Dental tools on a tray",
+      "imageUrl": "https://images.unsplash.com/photo-1629905686513-ade3616ee342?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjB0b29sc3xlbnwwfHx8fDE3NjE5MDQyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental tools"
     }
   ]
 }
