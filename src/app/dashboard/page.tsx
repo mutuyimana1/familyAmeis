@@ -28,6 +28,7 @@ export default function Dashboard() {
     <div className="flex flex-1 flex-col gap-4 md:gap-8">
       <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-2">
         <Card>
+        <Link href="/dashboard/blogs">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
               Blog Posts
@@ -40,20 +41,23 @@ export default function Dashboard() {
               Total blog posts
             </p>
           </CardContent>
+          </Link>
         </Card>
         <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              News Articles
-            </CardTitle>
-            <Newspaper className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">0</div>
-            <p className="text-xs text-muted-foreground">
-              Total news articles
-            </p>
-          </CardContent>
+          <Link href="/dashboard/news">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                News Articles
+              </CardTitle>
+              <Newspaper className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">0</div>
+              <p className="text-xs text-muted-foreground">
+                Total news articles
+              </p>
+            </CardContent>
+          </Link>
         </Card>
       </div>
       <Card>
