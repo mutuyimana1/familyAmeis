@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-slider-1",
+      "description": "Dentist with patient",
+      "imageUrl": "https://images.unsplash.com/photo-1669999615370-050e7e95d702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVudGlzdCUyMHBhdGllbnR8ZW58MHx8fHwxNzYxODM3ODQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist patient"
+    },
+    {
+      "id": "hero-slider-2",
+      "description": "Smiling woman",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1559855603-ce4c8f480d76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxODg1MDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "hero-slider-3",
+      "description": "Dental equipment",
+      "imageUrl": "https://images.unsplash.com/photo-1495573020741-8a2f372bbec3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkZW50YWwlMjBlcXVpcG1lbnR8ZW58MHx8fHwxNzYxODg1MjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental equipment"
+    },
+    {
+      "id": "about-preview",
+      "description": "Dentist office interior",
+      "imageUrl": "https://images.unsplash.com/photo-1616391182219-e080b4d1043a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZW50aXN0JTIwb2ZmaWNlfGVufDB8fHx8MTc2MTkwMTI4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist office"
+    },
+    {
+      "id": "doctor-1",
+      "description": "Portrait of Dr. Jessica Taylor",
+      "imageUrl": "https://images.unsplash.com/photo-1550831107-1553da8c8464?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxODQ0MTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "doctor-2",
+      "description": "Portrait of Dr. Kevin Martin",
+      "imageUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE4NDQxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "doctor-3",
+      "description": "Portrait of Dr. Amanda Bell",
+      "imageUrl": "https://images.unsplash.com/photo-1673865641073-4479f93a7776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE4NDQxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling man",
+      "imageUrl": "https://images.unsplash.com/photo-1725866546799-4cc16f6cba23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MTc4MzU2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a smiling woman",
+      "imageUrl": "https://images.unsplash.com/photo-1719087358997-12957d0859e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxODg1MDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "blog-1",
+      "description": "Toothbrush on a surface",
+      "imageUrl": "https://images.unsplash.com/photo-1559591939-c2d3c204f6da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0b290aGJydXNoJTIwZGVudGFsfGVufDB8fHx8MTc2MTkwMTI4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "toothbrush dental"
+    },
+    {
+      "id": "blog-2",
+      "description": "Dental floss container",
+      "imageUrl": "https://images.unsplash.com/photo-1704382922723-69b168b3a690?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkZW50YWwlMjBmbG9zc3xlbnwwfHx8fDE3NjE5MDEyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental floss"
+    },
+    {
+      "id": "blog-3",
+      "description": "Child at the dentist",
+      "imageUrl": "https://images.unsplash.com/photo-1758205308106-5760d0227cc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZCUyMGRlbnRpc3R8ZW58MHx8fHwxNzYxODg1MjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child dentist"
+    }
+  ]
 }
