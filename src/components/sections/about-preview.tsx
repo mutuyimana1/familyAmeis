@@ -7,20 +7,21 @@ import { CheckCircle, Stethoscope, Microscope, Users } from "lucide-react";
 const features = [
   {
     icon: Stethoscope,
-    title: "Professional Staff",
+    title: "Professional mental health counseling",
     description:
-      "Our team consists of highly skilled and certified family professionals.",
+      "We provide professional mental health counseling, family therapy, psychoeducation, and more to improve individual and Families well-being.",
   },
   {
     icon: Microscope,
-    title: "Modern Technology",
+    title: "Resolving family conflicts",
     description:
-      "We use the latest technology for accurate diagnostics and treatments.",
+      "We assist in resolving family conflicts, and support for individuals coping with marital challenges.",
   },
   {
     icon: Users,
-    title: "Patient-Centered Care",
-    description: "Your comfort and health are our top priorities.",
+    title: "Preventing Conflict Services",
+    description:
+      "Build a family that is accessible to everyone, Combating violence and preventing conflicts that arise within families.",
   },
 ];
 
@@ -31,7 +32,7 @@ export default function AboutPreviewSection() {
     <section className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-md">
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}
@@ -43,7 +44,7 @@ export default function AboutPreviewSection() {
               />
             )}
             <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-6 rounded-lg max-w-xs">
-              <p className="font-headline text-lg font-bold">25+</p>
+              <p className="font-headline text-lg font-bold">5+</p>
               <p>Years of experience in Familly bonds</p>
             </div>
           </div>
@@ -52,13 +53,13 @@ export default function AboutPreviewSection() {
               Why Choose Us
             </p>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Committed to Excellence in Familly bonds
+              Committed educate youth and adults on the importance of family,
+              Combat violence and prevent conflict...
             </h2>
             <p className="text-muted-foreground text-lg">
-              At AMIS DE LA FAMILLE AU RWANDA, we are dedicated to providing the highest standard of
-              Familly bonds in a comfortable and friendly environment. We
-              believe in building lasting relationships with our patients based
-              on trust and exceptional results.
+              Learn to deal with the fact that you are not a perfect person but
+              you are that deserves respect and honesty. Family gives you the
+              roots to stand tall and strong
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

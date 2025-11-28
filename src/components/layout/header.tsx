@@ -1,18 +1,30 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, X, Phone, Mail, Clock, Facebook, Twitter, Instagram, Linkedin, User } from 'lucide-react';
-import { navLinks } from '@/lib/data';
-import { cn } from '@/lib/utils';
-import { ToothIcon } from '@/components/icons';
-import Image from 'next/image';
-import img from "../../assets/images/logo.jpg"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Menu,
+  X,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  User,
+} from "lucide-react";
+import { navLinks } from "@/lib/data";
+import { cn } from "@/lib/utils";
+import { ToothIcon } from "@/components/icons";
+import Image from "next/image";
+import img from "../../assets/images/logo.jpg";
+import LanguageSwitcher from "../languageSwitcher";
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
-    <Image src={img} alt='logo' className="h-20 w-20 text-primary"/>
+    <Image src={img} alt="logo" className="h-20 w-20 text-primary" />
     <span className="text-2xl font-headline font-bold text-primary">AFR</span>
   </Link>
 );
@@ -25,8 +37,8 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const TopBar = () => (
@@ -39,7 +51,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-2">
             <Mail size={16} />
-            <span>info@amis.com</span>
+            <span>famillesdesamis@gmail.comm</span>
           </div>
           <div className="flex items-center gap-2">
             <Clock size={16} />
@@ -47,10 +59,18 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="#" aria-label="Facebook"><Facebook size={16} /></Link>
-          <Link href="#" aria-label="Twitter"><Twitter size={16} /></Link>
-          <Link href="#" aria-label="Instagram"><Instagram size={16} /></Link>
-          <Link href="#" aria-label="LinkedIn"><Linkedin size={16} /></Link>
+          <Link href="#" aria-label="Facebook">
+            <Facebook size={16} />
+          </Link>
+          <Link href="#" aria-label="Twitter">
+            <Twitter size={16} />
+          </Link>
+          <Link href="#" aria-label="Instagram">
+            <Instagram size={16} />
+          </Link>
+          <Link href="#" aria-label="LinkedIn">
+            <Linkedin size={16} />
+          </Link>
         </div>
       </div>
     </div>
@@ -78,67 +98,78 @@ export default function Header() {
           <span className="sr-only">Open menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[350px] bg-background p-0">
+      <SheetContent
+        side="left"
+        className="w-[300px] sm:w-[350px] bg-background p-0"
+      >
         <div className="flex flex-col h-full">
-            <div className="flex items-center justify-between p-6 border-b">
-              <Logo />
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <X size={24} />
-                  <span className="sr-only">Close menu</span>
-                </Button>
-              </SheetTrigger>
-            </div>
-            <nav className="flex flex-col p-6 gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </nav>
-            <div className="mt-auto p-6 border-t space-y-4">
-                <Button className="w-full" asChild>
-                    <Link href="/contact">Book an Appointment</Link>
-                </Button>
-                 <Button variant="outline" className="w-full" asChild>
-                    <Link href="/login">
-                        <User className="mr-2 h-4 w-4" />
-                        Login
-                    </Link>
-                </Button>
-            </div>
+          <div className="flex items-center justify-between p-6 border-b">
+            <Logo />
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <X size={24} />
+                <span className="sr-only">Close menu</span>
+              </Button>
+            </SheetTrigger>
+          </div>
+          <nav className="flex flex-col p-6 gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <div className="mt-auto p-6 border-t space-y-4">
+            <Button className="w-full" asChild>
+              <Link href="/contact">Book an Appointment</Link>
+            </Button>
+            <Button variant="outline" className="w-full" asChild>
+              <Link href="/login">
+                <User className="mr-2 h-4 w-4" />
+                Login
+              </Link>
+            </Button>
+          </div>
         </div>
       </SheetContent>
     </Sheet>
   );
 
   return (
-    <header className={cn(
-      "sticky top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "shadow-lg bg-background/80 backdrop-blur-sm" : ""
-    )}>
+    <header
+      className={cn(
+        "sticky top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled ? "shadow-lg bg-background/80 backdrop-blur-sm" : ""
+      )}
+    >
       <TopBar />
-      <div className={cn("bg-background/80 backdrop-blur-sm", isScrolled && "bg-transparent backdrop-blur-none")}>
+      <div
+        className={cn(
+          "bg-background/80 backdrop-blur-sm",
+          isScrolled && "bg-transparent backdrop-blur-none"
+        )}
+      >
         <div className="container mx-auto px-4 flex justify-between items-center h-20">
           <Logo />
           <MainNav />
           <div className="flex items-center gap-4">
             <Button className="hidden md:flex" asChild>
-                <Link href="/contact">Book an Appointment</Link>
+              <Link href="/contact">Book an Appointment</Link>
             </Button>
             <Button variant="outline" className="hidden md:flex" asChild>
-                <Link href="/login">
-                    <User className="mr-2 h-4 w-4" />
-                    Login
-                </Link>
+              <Link href="/login">
+                <User className="mr-2 h-4 w-4" />
+                Login
+              </Link>
             </Button>
             <MobileNav />
           </div>
+          <LanguageSwitcher/>
         </div>
       </div>
     </header>

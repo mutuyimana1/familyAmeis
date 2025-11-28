@@ -13,32 +13,34 @@ import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
 import { AppointmentForm } from "@/components/appointment-form";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { useTranslations } from "next-intl";
 
 const sliderContent = [
   {
     image: PlaceHolderImages.find((p) => p.id === "hero-slider-1"),
     subtitle: "Welcome to AMIS DE LA FAMILLE AU RWANDA",
-    title: "strong family bonds, and marriage.",
+    title: "Strong familly with conflict free.",
     description:
-      "To educate youth and adults on the importance of family life, the value of strong family bonds, and marriage preparation for lasting unions,build a family that is accessible to everyone, Combating violence and preventing conflicts that arise within families.",
+      "Amis de la Famille Rwanda is an organization created for those who share the same goal and who are complementary in terms of family building and finding solutions to family conflicts",
   },
   {
     image: PlaceHolderImages.find((p) => p.id === "hero-slider-2"),
     subtitle: "Your Smile, Our Priority",
-    title: "strong family bonds, and marriage.",
+    title: "Educate, Counsel and support familly.",
     description:
-      "To educate youth and adults on the importance of family life, the value of strong family bonds, and marriage preparation for lasting unions,build a family that is accessible to everyone, Combating violence and preventing conflicts that arise within families.",
+      " Amis de la Famille Rwanda aims to provide family education online, provide face-to-face counseling to those who need it, provide support to those who have family conflicts, and provide counseling to those who are experiencing marital breakdown. All of this is done with the help of experts who are part of the organization.",
   },
   {
     image: PlaceHolderImages.find((p) => p.id === "hero-slider-3"),
     subtitle: "Expert and Compassionate Team",
-    title: "Strong family bonds, and marriage.",
+    title: " Nothing in life makes sense without a smile in family.",
     description:
-      "To educate youth and adults on the importance of family life, the value of strong family bonds, and marriage preparation for lasting unions,build a family that is accessible to everyone, Combating violence and preventing conflicts that arise within families.",
+      "We provide romantic relationship skills, positive parenting skills, work stress management and trauma healing.",
   },
 ];
 
 export default function HeroSection() {
+  // const t = useTranslations('home');
   return (
     <section className="relative bg-primary">
       <div className="container mx-auto px-0 md:px-4">
@@ -64,7 +66,7 @@ export default function HeroSection() {
                         alt={slide.image.description}
                         fill
                         priority={index === 0}
-                        className="object-cover"
+                        className="object-contain "
                         data-ai-hint={slide.image.imageHint}
                       />
                     )}

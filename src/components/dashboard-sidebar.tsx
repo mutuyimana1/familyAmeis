@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Newspaper, LayoutDashboard, Pencil, LogOut } from "lucide-react"
+import { Newspaper, LayoutDashboard, Pencil, LogOut, Settings } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -23,7 +23,7 @@ export function DashboardSidebar() {
   ]
 
   return (
-    <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+    <aside className="fixed inset-y-0 left-0 z-10 hiddenm w-14 flex-col border-r bg-background sm:flex">
       <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
         <TooltipProvider>
           {navItems.map((item) => (
@@ -55,11 +55,11 @@ export function DashboardSidebar() {
                 href="/"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
-                <LogOut className="h-5 w-5" />
-                <span className="sr-only">Logout</span>
+                <Settings className="h-5 w-5" />
+                <span className="sr-only">Setting</span>
               </Link>
             </TooltipTrigger>
-            <TooltipContent side="right">Logout</TooltipContent>
+            <TooltipContent side="right">Setting</TooltipContent>
           </Tooltip>
         </TooltipProvider>
       </nav>

@@ -41,8 +41,8 @@ export default function BlogPreviewSection() {
                 )}
                 <CardHeader>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span>{post.category}</span>
-                    <span className="h-1 w-1 bg-muted-foreground rounded-full"></span>
+                    {/* <span>{post.category}</span> */}
+                    {/* <span className="h-1 w-1 bg-muted-foreground rounded-full"></span> */}
                     <time dateTime={post.date}>
                       {format(new Date(post.date), "MMMM d, yyyy")}
                     </time>

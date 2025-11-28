@@ -18,7 +18,7 @@ export default function LoginPage() {
     if (email && password) {
       // In a real app, you'd verify credentials here
       // For now, just navigate to the dashboard
-      // router.push('/dashboard');
+      router.push('/dashboard');
     } else {
       alert('Please enter email and password');
     }

@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <AboutPreviewSection />
-      <DoctorsSection />
+      {/* <DoctorsSection /> */}
       <TestimonialsSection />
       <BlogPreviewSection />
       <CtaBar />

@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
-
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 export const metadata: Metadata = {
   title: "AMIS DE LA FAMILLE AU RWANDA",
   description: "Top-quality Familly bonds with the latest technology.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+    // const messages = await getMessages();
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -34,9 +35,11 @@ export default function RootLayout({
           "min-h-screen bg-background font-body antialiased flex flex-col"
         )}
       >
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <main className="flex-grow">
+          {/* <NextIntlClientProvider messages={messages}> */}
+          {children}
+        {/* </NextIntlClientProvider> */}
+        </main>
         <Toaster />
       </body>
     </html>

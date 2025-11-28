@@ -14,39 +14,21 @@ export const navLinks = [
 export const services = [
   {
     icon: ToothIcon,
-    title: 'General family',
-    description: 'Comprehensive care for all ages, including checkups, cleanings, and fillings.',
+    title: 'Counseling Services',
+    description: 'Personalized mental health support tailored to meet your unique needs and goal.',
     slug: 'general-family',
   },
   {
     icon: WhiteningIcon,
-    title: 'family bonds',
-    description: 'Brighten your smile with our professional in-office or take-home whitening treatments.',
+    title: 'Marriage and Family Therapy',
+    description: 'Therapy sessions aimed at improving family dynamics and resolving conflicts within relationships.',
     slug: 'teeth-whitening',
   },
   {
     icon: DentalImplantIcon,
-    title: 'family Implants',
-    description: 'A permanent solution for missing family that looks and feels natural.',
+    title: 'Psychoeducation',
+    description: 'Learn to affirm Each other in the family, Lear to encourage family.',
     slug: 'family-implants',
-  },
-  {
-    icon: DentalBracesIcon,
-    title: 'Orthodontics',
-    description: 'Straighten your family and correct your bite with modern braces and aligners.',
-    slug: 'orthodontics',
-  },
-  {
-    icon: RootCanalIcon,
-    title: 'Root Canal Therapy',
-    description: 'Save your natural tooth with our expert root canal treatments.',
-    slug: 'root-canal-therapy',
-  },
-  {
-    icon: DentalCrownIcon,
-    title: 'Cosmetic family',
-    description: 'Enhance your smile with veneers, bonding, and other cosmetic procedures.',
-    slug: 'cosmetic-family',
   },
 ];
 
@@ -117,29 +99,29 @@ export const testimonials = [
 export const blogPosts = [
   {
     id: 1,
-    title: 'The Importance of Regular family Check-ups',
+    title: 'Mugore menya kurimbira umugabo wawe',
     slug: 'regular-family-check-ups',
     date: '2024-07-22',
     category: 'family Health',
-    excerpt: 'Discover why regular visits to your family are crucial for maintaining not just your oral health, but your overall well-being...',
+    excerpt:" Muri kamere y'umugabo habamo gushaka gusa neza igihe cyose,kugirango...",
     image: 'blog-1',
   },
   {
     id: 2,
-    title: 'Everything You Need to Know About family bonds',
+    title: 'Shishoza utaba ukabya gufuha',
     slug: 'about-teeth-whitening',
     date: '2024-07-15',
     category: 'Cosmetic family',
-    excerpt: 'Thinking about brightening your smile? Here’s a complete guide to professional family bonds options and what you can expect.',
+    excerpt: 'Hari abantu bafuhira abo bashakanye kugeza ubwo umuntu atemerewe gusuhuza ...',
     image: 'blog-2',
   },
   {
     id: 3,
-    title: 'Tips for Your Child’s First family Visit',
+    title: 'Impamvu zitera bamwe mubashakanye kugira umubabaro',
     slug: 'childs-first-family-visit',
     date: '2024-07-08',
     category: 'Pediatric family',
-    excerpt: 'Make your child’s first trip to the family a positive experience with these helpful tips for parents.',
+    excerpt: 'Har bamwe mubashakanye bahorana agahinda bakomra kubo bashakanye! Ese birakwiye kumva ko uwo...',
     image: 'blog-3',
   },
 ];
