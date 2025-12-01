@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title1": "Rien n'a de sens dans la vie sans un sourire en famille.",
+    "description1": "Nous proposons des formations sur les relations amoureuses, l'éducation parentale positive, la gestion du stress au travail et la guérison des traumatismes.",
+    "subTitle1": "Équipe d'experts et de personnes compatissantes",
+    "title2": "Éduquer, conseiller et soutenir la famille.",
+    "description2": "Amis de la Famille Rwanda a pour mission de proposer des formations familiales en ligne, des consultations individuelles pour ceux qui en ont besoin, un soutien aux familles en conflit et un accompagnement aux couples en rupture conjugale. Ces actions sont menées avec l'aide d'experts membres de l'organisation.",
+    "subTitle2": "Votre sourire, notre priorité",
+    "title3": "Famille unie et sans conflit.",
+    "description3": "Amis de la Famille Rwanda est une organisation créée pour ceux qui partagent le même objectif et qui sont complémentaires en matière de construction familiale et de recherche de solutions aux conflits familiaux.",
+    "subTitle3": "Welcome to AMIS DE LA FAMILLE AU RWANDA",
+    "moreBtn":"Apprendre encore plus"
+  },
+  "book":{
+    "title":"Prendre rendez-vous",
+    "btnName":"Réservez maintenant"
+  }
+}

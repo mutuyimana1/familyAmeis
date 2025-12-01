@@ -34,6 +34,7 @@ import {
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { useTranslations } from "next-intl"
 
 const appointmentFormSchema = z.object({
   name: z.string().min(2, {
@@ -50,7 +51,6 @@ const appointmentFormSchema = z.object({
   }),
   message: z.string().optional(),
 })
-
 type AppointmentFormValues = z.infer<typeof appointmentFormSchema>
 
 const defaultValues: Partial<AppointmentFormValues> = {
@@ -60,6 +60,7 @@ const defaultValues: Partial<AppointmentFormValues> = {
 
 export function AppointmentForm() {
   const { toast } = useToast()
+const t = useTranslations('book');
   const form = useForm<AppointmentFormValues>({
     resolver: zodResolver(appointmentFormSchema),
     defaultValues,
@@ -85,7 +86,7 @@ export function AppointmentForm() {
   return (
     <Card className="w-full max-w-lg shadow-2xl">
         <CardHeader>
-            <CardTitle className="font-headline text-3xl text-center text-primary">Book an Appointment</CardTitle>
+            <CardTitle className="font-headline text-3xl text-center text-primary">{t("title")}</CardTitle>
         </CardHeader>
         <CardContent>
             <Form {...form}>
@@ -193,7 +194,7 @@ export function AppointmentForm() {
                     </FormItem>
                 )}
                 />
-                <Button type="submit" className="w-full text-lg py-6">Book Now</Button>
+                <Button type="submit" className="w-full text-lg py-6">{t("btnName")}</Button>
             </form>
             </Form>
         </CardContent>

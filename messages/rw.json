@@ -1,6 +1,18 @@
 {
   "home": {
-    "title": "Murakaza neza",
-    "description": "Iyi ni paji y'itangiriro"
+    "title1": "Ntakintu mubuzima cyumvikana nta kumwenyura mumuryango.",
+    "description1": "Dutanga ubuhanga bwimibanire yurukundo, ubuhanga bwiza bwababyeyi, gucunga ibibazo byakazi no gukiza ihahamuka.",
+    "subTitle1": "Itsinda ryinzobere nimpuhwe",
+    "title2": "Wigishe, Umujyanama kandi ushyigikire umuryango.",
+    "description2": "Amis de la Famille Rwanda igamije gutanga uburere bwumuryango kumurongo, gutanga inama imbonankubone kubabikeneye, gutanga inkunga kubafite amakimbirane mumiryango, no gutanga ubujyanama kubafite ibibazo byo gusenyuka kwabashakanye. Ibi byose bikorwa hifashishijwe impuguke zigize umuryango.",
+    "subTitle2": "Kumwenyura, Ibyo dushyira imbere",
+    "title3": "Mukomere mumuryango hamwe namakimbirane adafite.",
+    "description3": "Amis de la Famille Rwanda ni umuryango washyizweho kubantu bahuje intego kandi bakuzuzanya mubijyanye no kubaka umuryango no gushakira igisubizo amakimbirane mu miryango.",
+    "subTitle3": "Murakaza neza ku Nshuti Z'UMURYANGO MURI RWANDA",
+    "moreBtn":"Menya byinshi"
+  },
+  "book":{
+    "title":"Saba Umwanya",
+    "btnName":"Saba nonaha"
   }
 }

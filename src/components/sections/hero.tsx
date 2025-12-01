@@ -15,6 +15,9 @@ import { AppointmentForm } from "@/components/appointment-form";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useTranslations } from "next-intl";
 
+ 
+export default function HeroSection() { 
+  const t = useTranslations('home');
 const sliderContent = [
   {
     image: PlaceHolderImages.find((p) => p.id === "hero-slider-1"),
@@ -32,15 +35,12 @@ const sliderContent = [
   },
   {
     image: PlaceHolderImages.find((p) => p.id === "hero-slider-3"),
-    subtitle: "Expert and Compassionate Team",
-    title: " Nothing in life makes sense without a smile in family.",
-    description:
-      "We provide romantic relationship skills, positive parenting skills, work stress management and trauma healing.",
+    subtitle: t("subTitle1"),
+    title:  t("title1"),
+    description:t("description1"),
   },
 ];
 
-export default function HeroSection() {
-  // const t = useTranslations('home');
   return (
     <section className="relative bg-primary">
       <div className="container mx-auto px-0 md:px-4">
@@ -89,7 +89,7 @@ export default function HeroSection() {
                             className="mt-4"
                             asChild
                           >
-                            <Link href="/about">Learn More</Link>
+                            <Link href="/about">{t("moreBtn")}</Link>
                           </Button>
                         </div>
                       </div>

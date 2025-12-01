@@ -3,9 +3,10 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getLocale, getMessages} from 'next-intl/server';
+
 export const metadata: Metadata = {
-  title: "AMIS DE LA FAMILLE AU RWANDA",
+  title: "AMIS DE LA FAMILLE AU RWANDA",
   description: "Top-quality Familly bonds with the latest technology.",
 };
 
@@ -14,10 +15,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    // const messages = await getMessages();
-
+    const messages = await getMessages();
+const locale=await getLocale()
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -35,11 +36,11 @@ export default async function RootLayout({
           "min-h-screen bg-background font-body antialiased flex flex-col"
         )}
       >
-        <main className="flex-grow">
-          {/* <NextIntlClientProvider messages={messages}> */}
-          {children}
-        {/* </NextIntlClientProvider> */}
-        </main>
+        <NextIntlClientProvider messages={messages}>
+          <main className="flex-grow">
+            {children}
+          </main>
+        </NextIntlClientProvider>
         <Toaster />
       </body>
     </html>

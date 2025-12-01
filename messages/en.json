@@ -1,6 +1,18 @@
 {
   "home": {
-    "title": "Welcome",
-    "description": "This is the homepage"
+    "title1": "Nothing in life makes sense without a smile in family.",
+    "description1": "We provide romantic relationship skills, positive parenting skills, work stress management and trauma healing.",
+    "subTitle1": "Expert and Compassionate Team",
+    "title2": "Educate, Counsel and support familly.",
+    "description2": "Amis de la Famille Rwanda aims to provide family education online, provide face-to-face counseling to those who need it, provide support to those who have family conflicts, and provide counseling to those who are experiencing marital breakdown. All of this is done with the help of experts who are part of the organization.",
+    "subTitle2": "Your Smile, Our Priority",
+    "title3": "Strong familly with conflict free.",
+    "description3": "Amis de la Famille Rwanda is an organization created for those who share the same goal and who are complementary in terms of family building and finding solutions to family conflicts.",
+    "subTitle3": "Welcome to AMIS DE LA FAMILLE AU RWANDA",
+    "moreBtn":"Learn More"
+  },
+  "book":{
+    "title":"Book an Appointment",
+    "btnName":"Book Now"
   }
 }
