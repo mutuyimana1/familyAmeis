@@ -3,25 +3,25 @@
     {
       "id": "hero-slider-1",
       "description": "family with patient",
-      "imageUrl": "https://cdn.pixabay.com/photo/2022/05/28/19/39/business-7227887_1280.png",
+      "imageUrl": "/images/happy family.jpeg",
       "imageHint": "family patient"
     },
     {
       "id": "hero-slider-2",
       "description": "Smiling woman",
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/17/05/27/angry-3233158_1280.jpg",
+      "imageUrl": "/images/wmremove-transformed.jpeg",
       "imageHint": "woman smiling"
     },
     {
       "id": "hero-slider-3",
       "description": "family equipment",
-      "imageUrl": "https://cdn.pixabay.com/photo/2025/05/15/13/59/family-9601812_1280.png",
+      "imageUrl": "/images/conflict.jpeg",
       "imageHint": "family equipment"
     },
     {
       "id": "about-preview",
       "description": "family office interior",
-      "imageUrl": "https://cdn.pixabay.com/photo/2025/09/17/10/11/family-yoga-9839265_1280.png",
+      "imageUrl": "/images/happy.jpeg",
       "imageHint": "family office"
     },
     {
@@ -57,25 +57,25 @@
     {
       "id": "blog-1",
       "description": "Toothbrush on a surface",
-      "imageUrl": "https://images.unsplash.com/photo-1695370992814-be6970e051ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+      "imageUrl": "/images/withChild.jpeg",
       "imageHint": "toothbrush family"
     },
     {
       "id": "blog-2",
       "description": "family floss container",
-      "imageUrl": "https://plus.unsplash.com/premium_photo-1664642052985-d1e599fc6614?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+      "imageUrl": "/images/pexels-diva-plavalaguna-5710895.jpg",
       "imageHint": "family floss"
     },
     {
       "id": "blog-3",
       "description": "Child at the family",
-      "imageUrl": "https://plus.unsplash.com/premium_photo-1700508910925-407d78ec4b27?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+      "imageUrl": "/images/pexels-august-de-richelieu-4259140.jpg",
       "imageHint": "child family"
     },
     {
       "id": "page-header",
       "description": "family tools on a tray",
-      "imageUrl": "https://images.unsplash.com/photo-1643818653783-2f818a205bb6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=928",
+      "imageUrl": "/images/pexels-august-de-richelieu-4259140.jpg",
       "imageHint": "family tools"
     }
   ]

@@ -15,31 +15,30 @@ import { AppointmentForm } from "@/components/appointment-form";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useTranslations } from "next-intl";
 
- 
-export default function HeroSection() { 
-  const t = useTranslations('home');
-const sliderContent = [
-  {
-    image: PlaceHolderImages.find((p) => p.id === "hero-slider-1"),
-    subtitle: "Welcome to AMIS DE LA FAMILLE AU RWANDA",
-    title: "Strong familly with conflict free.",
-    description:
-      "Amis de la Famille Rwanda is an organization created for those who share the same goal and who are complementary in terms of family building and finding solutions to family conflicts",
-  },
-  {
-    image: PlaceHolderImages.find((p) => p.id === "hero-slider-2"),
-    subtitle: "Your Smile, Our Priority",
-    title: "Educate, Counsel and support familly.",
-    description:
-      " Amis de la Famille Rwanda aims to provide family education online, provide face-to-face counseling to those who need it, provide support to those who have family conflicts, and provide counseling to those who are experiencing marital breakdown. All of this is done with the help of experts who are part of the organization.",
-  },
-  {
-    image: PlaceHolderImages.find((p) => p.id === "hero-slider-3"),
-    subtitle: t("subTitle1"),
-    title:  t("title1"),
-    description:t("description1"),
-  },
-];
+export default function HeroSection() {
+  const t = useTranslations("home");
+  const sliderContent = [
+    {
+      image: PlaceHolderImages.find((p) => p.id === "hero-slider-1"),
+      subtitle: "Welcome to AMIS DE LA FAMILLE AU RWANDA",
+      title: "Strong familly with conflict free.",
+      description:
+        "Amis de la Famille Rwanda is an organization created for those who share the same goal and who are complementary in terms of family building and finding solutions to family conflicts",
+    },
+    {
+      image: PlaceHolderImages.find((p) => p.id === "hero-slider-2"),
+      subtitle: "Your Smile, Our Priority",
+      title: "Educate, Counsel and support familly.",
+      description:
+        " Amis de la Famille Rwanda aims to provide family education online, provide face-to-face counseling to those who need it, provide support to those who have family conflicts, and provide counseling to those who are experiencing marital breakdown. All of this is done with the help of experts who are part of the organization.",
+    },
+    {
+      image: PlaceHolderImages.find((p) => p.id === "hero-slider-3"),
+      subtitle: t("subTitle1"),
+      title: t("title1"),
+      description: t("description1"),
+    },
+  ];
 
   return (
     <section className="relative bg-primary">
@@ -70,7 +69,7 @@ const sliderContent = [
                         data-ai-hint={slide.image.imageHint}
                       />
                     )}
-                    <div className="absolute inset-0 bg-black/50" />
+                    {/* <div className="absolute inset-0 bg-black/20" /> */}
                     <div className="relative h-full flex items-center">
                       <div className="container mx-auto px-4">
                         <div className="max-w-xl text-white space-y-4">
@@ -104,9 +103,9 @@ const sliderContent = [
             </div>
           </Carousel>
 
-          <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-8 z-10 w-full md:w-auto p-4 md:p-0 mt-8 md:mt-0">
+          {/* <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-8 z-10 w-full md:w-auto p-4 md:p-0 mt-8 md:mt-0">
             <AppointmentForm />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

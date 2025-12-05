@@ -29,24 +29,20 @@ export default function AboutPreviewSection() {
   const aboutImage = PlaceHolderImages.find((p) => p.id === "about-preview");
 
   return (
-    <section className="py-16 md:py-24 bg-card">
+    <section className="py5-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-md">
+          <div className="relative aspect-[4/5] rounderd-lg overflow-hridden shardow-md">
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}
                 alt={aboutImage.description}
                 fill
-                className="object-cover"
+                className="object-none"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 data-ai-hint={aboutImage.imageHint}
               />
             )}
-            <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-6 rounded-lg max-w-xs">
-              <p className="font-headline text-lg font-bold">5+</p>
-              <p>Years of experience in Familly bonds</p>
-            </div>
           </div>
           <div className="space-y-6">
             <p className="font-semibold text-primary uppercase tracking-wider">

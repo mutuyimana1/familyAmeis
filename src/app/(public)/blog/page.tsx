@@ -23,7 +23,7 @@ export default function BlogPage() {
                         src={postImage.imageUrl}
                         alt={post.title}
                         fill
-                        className="object-cover rounded-md"
+                        className="object-none rounded-md"
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw"
                         data-ai-hint={postImage.imageHint}
                       />

@@ -5,6 +5,7 @@ import DoctorsSection from "@/components/sections/doctors";
 import TestimonialsSection from "@/components/sections/testimonials";
 import BlogPreviewSection from "@/components/sections/blog-preview";
 import CtaBar from "@/components/sections/cta-bar";
+import AskedQuestion from "@/components/AskedQuestion";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <DoctorsSection /> */}
       <TestimonialsSection />
       <BlogPreviewSection />
+      <AskedQuestion/>
       <CtaBar />
     </>
   );

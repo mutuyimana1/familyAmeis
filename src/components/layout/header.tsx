@@ -25,13 +25,19 @@ import LanguageSwitcher from "../languageSwitcher";
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
     <Image src={img} alt="logo" className="h-20 w-20 text-primary" />
-    <span className="text-2xl font-headline font-bold text-primary">AFR</span>
+    <span className="text-lg font-headline font-bold text-primary uppercase">
+      <span className="text-[#00391a]">Amis de la</span> <br />{" "}
+      <span className="text-[#ef2c21]">famille au</span> <br /> Rwanda
+    </span>
   </Link>
 );
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<
+    null | (typeof navLinks)[number]["name"]
+  >(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,15 +83,58 @@ export default function Header() {
   );
 
   const MainNav = () => (
-    <nav className="hidden md:flex items-center gap-6">
+    <nav className="hidden md:flex items-center gap-6 relative">
       {navLinks.map((link) => (
-        <Link
+        <div
           key={link.name}
-          href={link.href}
-          className="font-medium text-foreground hover:text-primary transition-colors"
+          className="relative group"
+          onClick={() => setActiveMenu(link.name)}
+          // onMouseLeave={() => setActiveMenu(null)}
         >
-          {link.name}
-        </Link>
+          {/* TOP-LEVEL LINK */}
+          {!link.submenu ? (
+            <Link
+              href={link.href}
+              className="font-medium text-foreground hover:text-primary transition-colors flex items-center gap-1"
+            >
+              {link.name}
+            </Link>
+          ) : (
+            <span className="font-medium text-foreground flex items-center gap-1 cursor-pointer">
+              {link.name}
+              <span className="text-xs">▼</span>
+            </span>
+          )}
+
+          {/* SUBMENU */}
+          {link.submenu && activeMenu === link.name && (
+            <div className="absolute left-0 mt-3 w-64 bg-white shadow-xl border rounded-lg py-3 z-50">
+              <Link
+                href={link.href}
+                className="px-4 pb-2 text-xs font-semibold text-gray-500 tracking-wide"
+              >
+                {link.name.toUpperCase()}
+              </Link>
+
+              <div className="border-b mb-2" />
+
+              <ul className="flex flex-col" onClick={() => setActiveMenu(null)}>
+                {link.submenu.map((sub, i) => (
+                  <li key={i}>
+                    <Link
+                      // href={sub.href}
+                      href={""}
+                      className="flex items-center justify-between px-4 py-2 hover:bg-gray-100 text-sm text-gray-700"
+                    >
+                      {sub.name}
+                      <span>›</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       ))}
     </nav>
   );
@@ -169,7 +218,7 @@ export default function Header() {
             </Button>
             <MobileNav />
           </div>
-          <LanguageSwitcher/>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>
