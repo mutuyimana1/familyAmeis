@@ -7,21 +7,27 @@ import { CheckCircle, Stethoscope, Microscope, Users } from "lucide-react";
 const features = [
   {
     icon: Stethoscope,
-    title: "Professional mental health counseling",
+    title: "Addressing Marital Issues",
     description:
-      "We provide professional mental health counseling, family therapy, psychoeducation, and more to improve individual and Families well-being.",
+      " Marriage counsellors specialize in resolving complex problems such as sexual dysfunction, cheating, and infidelity. Their expertise can help couples navigate and overcome these challenging issues.",
   },
   {
     icon: Microscope,
-    title: "Resolving family conflicts",
+    title: "Improving Intimacy",
     description:
-      "We assist in resolving family conflicts, and support for individuals coping with marital challenges.",
+      "Professional guidance aids in navigating and resolving conflicts, improving communication, and fostering a healthier relationship dynamic. Counsellors provide strategies to manage disagreements and reduce tension.",
+  },
+  {
+    icon: Microscope,
+    title: "Conflict Resolution",
+    description:
+      "Professional guidance aids in navigating and resolving conflicts, improving communication, and fostering a healthier relationship dynamic. Counsellors provide strategies to manage disagreements and reduce tension.",
   },
   {
     icon: Users,
-    title: "Preventing Conflict Services",
+    title: "Enhancing Relationship Satisfaction",
     description:
-      "Build a family that is accessible to everyone, Combating violence and preventing conflicts that arise within families.",
+      " Counseling provides tools and techniques to better understand each other’s needs, fostering mutual respect and enhancing overall satisfaction in the marriage.",
   },
 ];
 
@@ -46,11 +52,10 @@ export default function AboutPreviewSection() {
           </div>
           <div className="space-y-6">
             <p className="font-semibold text-primary uppercase tracking-wider">
-              Why Choose Us
+            Why Marriage Counseling is Essential?
             </p>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Committed educate youth and adults on the importance of family,
-              Combat violence and prevent conflict...
+              Marriage counselling is a valuable resource for couples experiencing difficulties in their relationship. Here’s why seeking professional help is crucial:
             </h2>
             <p className="text-muted-foreground text-lg">
               Learn to deal with the fact that you are not a perfect person but

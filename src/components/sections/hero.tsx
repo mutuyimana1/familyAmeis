@@ -72,14 +72,14 @@ export default function HeroSection() {
                     {/* <div className="absolute inset-0 bg-black/20" /> */}
                     <div className="relative h-full flex items-center">
                       <div className="container mx-auto px-4">
-                        <div className="max-w-xl text-white space-y-4">
-                          <p className="font-semibold text-accent uppercase tracking-wider">
+                        <div className="max-w-xl text-white space-y-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] shadow-black">
+                          <p className="font-semibold  uppercase tracking-wider text-5xl">
                             {slide.subtitle}
                           </p>
-                          <h1 className="font-headline text-4xl md:text-6xl font-bold leading-tight">
+                          <h1 className="font-headline text-3xl md:text-4xl text-orange-500 font-bold leading-tight">
                             {slide.title}
                           </h1>
-                          <p className="text-lg md:text-xl text-gray-200">
+                          <p className="text-lg md:text-xl text-white font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)] shadow-gray-200">
                             {slide.description}
                           </p>
                           <Button

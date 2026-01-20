@@ -109,27 +109,27 @@ export const doctors = [
 export const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
-    location: 'New York',
+    name: 'Fidens',
+    location: 'Kagali',
     image: 'testimonial-1',
     rating: 5,
-    comment: 'The best Familly bonds I have ever had. The staff is friendly and professional. I would highly recommend this clinic to anyone!',
+    comment: 'Mugisha ndagushimira ko wagize uruhare mugushinga umuryango ufasha abashakanye kubaka urugo ruhamye!Inama mwampaye zaranyubatse kuburyo ubu urugo rwacu rutakirangwamo amakimbirane pe!Komerezaho kubaka imiryango yacu.',
   },
   {
     id: 2,
-    name: 'Jane Smith',
-    location: 'Los Angeles',
+    name: 'Immaculate',
+    location: 'Musanze',
     image: 'testimonial-2',
     rating: 5,
-    comment: 'My kids love coming to the family now! Dr. Amanda Bell . The whole experience was smooth and stress-free.',
+    comment: 'Gusa nabaye ahantu henshi ariko FAAR yarampumuye ndashimira Mugisha wampaye link nta gihombo pe,Imana izamwijyanire🙏🏽',
   },
   {
     id: 3,
-    name: 'Mike Johnson',
-    location: 'Chicago',
-    image: 'testimonial-1',
+    name: 'Emable',
+    location: 'Musanze',
+    image: 'testimonial-2',
     rating: 5,
-    comment: 'I got family implants and the result is fantastic. Dr. Taylor did an incredible job. The process was painless and worth every penny.',
+    comment: 'Mugisha ndagira ngo mbashimire ubufasha mwampaye.Nyuma yo kubasaba inama yuko nakakira kuba narasanze umugabo ansha inyuma kumuturanyi wacu rwose inama nagiriwe Nakuyemo byinshi ndetse ngerageza kubishyira mubikorwa pe kandi ubu bya gender neza!umugabo Namusabye Ikiganiro turaganira ntuje rwose ansaba imbabazi ndamwumva ubu ntakibazo!Mugisha ndagushimira cyaneeeee kukumenya ni Ibyagaciro kuko wambaye hafi pe ndashimira nabavandimwe tubana muri FAAR gusa nkasaba ngo niba umuntu asabye inama aba ababaye Kandi asaba inama kuko byamurenze,tumufashe Tutamuhutaje cg ngo tumurimireho amasinde kuko uyu munsi niwe ejo ni wowe!Kubabarira rwose Biraruhura. Warakoze cyanee Mugisha uri Umuhanga pee!',
   },
 ];
 
@@ -140,8 +140,8 @@ export const blogPosts = [
     slug: 'regular-family-check-ups',
     date: '2024-07-22',
     category: 'family Health',
-    excerpt:"🌺Abashakanye benshi ubona badafite umwanya wo gukora bimwe mu by'ingenzi kumunsi wabo w'ikiruhuko: kuganira nk'abashakanye,gutoza abanauburere bukwiye...!",
-    fullContent:"🌺Abashakanye benshi ubona badafite umwanya wo gukora bimwe mu by'ingenzi kumunsi wabo w'ikiruhuko: kuganira nk'abashakanye,gutoza abanauburere bukwiye...! Ntibobona igihe cyo kugira inamay'urugo ngo bahe abana inshingano bitewen'ibyo bashoboye gukora! 🌺Burya akenshi bipfira mumikoreshereze y'igihe! Kuruhuka bikaba kuryama igihe kinini,igihe babyukiye ugasanga buri wese mubashakanye agiye muri gahunda zebwite,gusura abandi bantu, kujya kuri telefone,gutembera...,Wasobanura gute ukuntu umuntu agira amasaha 16 ari maso,ariko ntacyo yapanze ayakoramo? 🌺Burya ikintu cy'agaciro umubyeyi aha umwana ni uburere bumufasha kuba ku isi yishakamo ibisubizo we ubwe ndetse no kubandi bantu bazamukenera! Fata akanya uganire n'abana, buri wese abone ko umwitayeho mu buryo bwihariye! Mukore inama y'urugo nk'umuryango, mubereke ko na bo bafite uruhare   mu kurema umunezero w'urugo!Mubahe ubwisanzure bagaragaze impano zabo!mutoze abana gukora uturimo two murugo.Abajijutse batumwe guhaha, bibafashe kumenya agaciro k'amafaranga n'uko akoreshwa!",
+    excerpt: "🌺Abashakanye benshi ubona badafite umwanya wo gukora bimwe mu by'ingenzi kumunsi wabo w'ikiruhuko: kuganira nk'abashakanye,gutoza abanauburere bukwiye...!",
+    fullContent: "🌺Abashakanye benshi ubona badafite umwanya wo gukora bimwe mu by'ingenzi kumunsi wabo w'ikiruhuko: kuganira nk'abashakanye,gutoza abanauburere bukwiye...! Ntibobona igihe cyo kugira inamay'urugo ngo bahe abana inshingano bitewen'ibyo bashoboye gukora! 🌺Burya akenshi bipfira mumikoreshereze y'igihe! Kuruhuka bikaba kuryama igihe kinini,igihe babyukiye ugasanga buri wese mubashakanye agiye muri gahunda zebwite,gusura abandi bantu, kujya kuri telefone,gutembera...,Wasobanura gute ukuntu umuntu agira amasaha 16 ari maso,ariko ntacyo yapanze ayakoramo? 🌺Burya ikintu cy'agaciro umubyeyi aha umwana ni uburere bumufasha kuba ku isi yishakamo ibisubizo we ubwe ndetse no kubandi bantu bazamukenera! Fata akanya uganire n'abana, buri wese abone ko umwitayeho mu buryo bwihariye! Mukore inama y'urugo nk'umuryango, mubereke ko na bo bafite uruhare   mu kurema umunezero w'urugo!Mubahe ubwisanzure bagaragaze impano zabo!mutoze abana gukora uturimo two murugo.Abajijutse batumwe guhaha, bibafashe kumenya agaciro k'amafaranga n'uko akoreshwa!",
     image: 'blog-1',
   },
   {
@@ -151,7 +151,7 @@ export const blogPosts = [
     date: '2024-07-15',
     category: 'Cosmetic family',
     excerpt: "Ku isi buri muntu wese agira ibintu akunda kurya cg akunda kunywa,bitewe n'amahitamo y'ibyiyumvo bye.",
-    fullContent:"Ku isi buri muntu wese agira ibintu akunda kurya cg akunda kunywa,bitewe n'amahitamo y'ibyiyumvo bye.Mumibanire y'abashakanye bibaho ko mudahuza mubyo murya cg munywa kandi si ikibazo. Kuba uwo mwashakanye hari ikintu akunda,Sibyiza gusebya ibyo akunda kurya cg kunywa:Inzoga ziranuka,indagara ziranuka ntimukaziteke,sinkunda ibiraha bikorwa nabi,ntimugateke igitoki sinkikunda,lsombe sinyirya ntimukayiteke,... Niba abikunda utabikunda,nibyiza kubivuga, ukamuha n'igihe cyo kubirya cg kubinywa,kuba udakunda kubirya,ntibikwiye kuba ihame ko n'uwo mwashakanye atabirya kandi we abikunda.Iyo buri wese yishyira akizana kumahitamo y'ibyo umwe arya cg anywa mumuryango bizana ibyishimo kandi bigatera ubwisanzure hagati y'abashakanye kumeza.Buri wese mumahitamo ye, akwiriye kubaha n'amahitamo y'abandi,ndetse byaba byiza ugafasha uwo mwashakanye kubona icyo akunda kurya nubwo wowe waba utagikunda.Guhitamo ibyo murya/munywa si ikimenyetso cyo kudahuza,ahubwo bishobora kuba umurunga w'urukundo rwanyu!",
+    fullContent: "Ku isi buri muntu wese agira ibintu akunda kurya cg akunda kunywa,bitewe n'amahitamo y'ibyiyumvo bye.Mumibanire y'abashakanye bibaho ko mudahuza mubyo murya cg munywa kandi si ikibazo. Kuba uwo mwashakanye hari ikintu akunda,Sibyiza gusebya ibyo akunda kurya cg kunywa:Inzoga ziranuka,indagara ziranuka ntimukaziteke,sinkunda ibiraha bikorwa nabi,ntimugateke igitoki sinkikunda,lsombe sinyirya ntimukayiteke,... Niba abikunda utabikunda,nibyiza kubivuga, ukamuha n'igihe cyo kubirya cg kubinywa,kuba udakunda kubirya,ntibikwiye kuba ihame ko n'uwo mwashakanye atabirya kandi we abikunda.Iyo buri wese yishyira akizana kumahitamo y'ibyo umwe arya cg anywa mumuryango bizana ibyishimo kandi bigatera ubwisanzure hagati y'abashakanye kumeza.Buri wese mumahitamo ye, akwiriye kubaha n'amahitamo y'abandi,ndetse byaba byiza ugafasha uwo mwashakanye kubona icyo akunda kurya nubwo wowe waba utagikunda.Guhitamo ibyo murya/munywa si ikimenyetso cyo kudahuza,ahubwo bishobora kuba umurunga w'urukundo rwanyu!",
     image: 'blog-2',
   },
   {
@@ -161,7 +161,7 @@ export const blogPosts = [
     date: '2024-07-08',
     category: 'Pediatric family',
     excerpt: '💐Mubikwiye kuranga urugo rwiza,abashakanye bakwiye Kugabana inshingano no kuzuzuza,mugashishoza neza ibyo.....',
-    fullContent:"💐Mubikwiye kuranga urugo rwiza,abashakanye bakwiye Kugabana inshingano no kuzuzuza,mugashishoza neza ibyo mwakoresha amaboko yanyu,mugendeye kumpano buri wese yifitemo ndetse n'ubushobozi bw'icyo buri wese ashobora kwinjiza mu rugo rwanyu!💐Kuzuza inshingano, bigomba gukorwa mu rukundo rwinshi,ntamirimo yagenewe igitsina runaka,mugafatanya byose kandi mwubahana nibwo urugo rwanyu ruzagira umudendezo! Birashoboka ko buri wese yunganira uwo bashakanye igihe atihagije mu byo yasabwaga gukora,gusa jya wirinda kubigira ihame,kuburyo wabigira itegeko bitazavamo ikindi kintu gisa no kubahuka!💐Bikore mu bwitange, wirinda agasigane nokuvunishanya,bizagenda neza kandi bibatere kunga ubumwe mumuryango wangu.",
+    fullContent: "💐Mubikwiye kuranga urugo rwiza,abashakanye bakwiye Kugabana inshingano no kuzuzuza,mugashishoza neza ibyo mwakoresha amaboko yanyu,mugendeye kumpano buri wese yifitemo ndetse n'ubushobozi bw'icyo buri wese ashobora kwinjiza mu rugo rwanyu!💐Kuzuza inshingano, bigomba gukorwa mu rukundo rwinshi,ntamirimo yagenewe igitsina runaka,mugafatanya byose kandi mwubahana nibwo urugo rwanyu ruzagira umudendezo! Birashoboka ko buri wese yunganira uwo bashakanye igihe atihagije mu byo yasabwaga gukora,gusa jya wirinda kubigira ihame,kuburyo wabigira itegeko bitazavamo ikindi kintu gisa no kubahuka!💐Bikore mu bwitange, wirinda agasigane nokuvunishanya,bizagenda neza kandi bibatere kunga ubumwe mumuryango wangu.",
     image: 'blog-3',
   },
 ];

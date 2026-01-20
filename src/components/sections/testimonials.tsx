@@ -12,6 +12,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 export default function TestimonialsSection() {
   return (
@@ -22,27 +28,35 @@ export default function TestimonialsSection() {
             What Our Patients Say
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We take pride in our patients' satisfaction. Here's what some of them have to say about their experience at AMIS DE LA FAMILLE AU RWANDA.
+            We take pride in our patients' satisfaction. Here's what some of them have to say about their experience at AMIS DE LA FAMILLE AU RWANDA.
           </p>
         </div>
         
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-5xl mx-auto"
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial) => {
-              const testimonialImage = PlaceHolderImages.find(p => p.id === testimonial.image);
-              return (
-                <CarouselItem key={testimonial.id} className="md:basis-1/2">
-                  <div className="p-1">
-                    <Card className="h-full">
-                      <CardContent className="flex flex-col items-center text-center p-8 space-y-4">
-                        <Quote className="w-12 h-12 text-accent" />
-                        <p className="text-muted-foreground italic flex-grow">"{testimonial.comment}"</p>
+        <TooltipProvider>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial) => {
+                const testimonialImage = PlaceHolderImages.find(p => p.id === testimonial.image);
+                return (
+                  <CarouselItem key={testimonial.id} className="md:basis-1/2">
+                    <div className="p-1">
+                      <Card className="h-full">
+                        <CardContent className="flex flex-col items-center text-center p-8 space-y-4">
+                          <Quote className="w-12 h-12 text-accent" />
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <p className="text-muted-foreground italic flex-grow line-clamp-2 cursor-help">"{testimonial.comment}"</p>
+                            </TooltipTrigger>
+                            <TooltipContent className="max-w-md">
+                              <p className="text-sm">"{testimonial.comment}"</p>
+                            </TooltipContent>
+                          </Tooltip>
                         <div className="flex flex-col items-center pt-4">
                             {testimonialImage && (
                                 <Image
@@ -72,6 +86,7 @@ export default function TestimonialsSection() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        </TooltipProvider>
       </div>
     </section>
   );

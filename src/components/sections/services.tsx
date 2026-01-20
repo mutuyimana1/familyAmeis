@@ -10,7 +10,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-            Comprehensive Familly bonds
+           Our Services
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             From routine check-ups to advanced treatments, we offer a wide range
