@@ -125,7 +125,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: 'Emable',
+    name: 'Aimable',
     location: 'Musanze',
     image: 'testimonial-2',
     rating: 5,
