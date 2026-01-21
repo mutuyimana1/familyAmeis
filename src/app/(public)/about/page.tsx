@@ -3,6 +3,7 @@ import DoctorsSection from "@/components/sections/doctors";
 import TestimonialsSection from "@/components/sections/testimonials";
 import CtaBar from "@/components/sections/cta-bar";
 import PageHeader from "@/components/page-header";
+import Benefit from "@/components/sections/Benefit";
 
 export default function AboutPage() {
   return (
@@ -15,7 +16,7 @@ export default function AboutPage() {
       />
       <AboutPreviewSection />
       <DoctorsSection />
-      <TestimonialsSection />
+      <Benefit />
       <CtaBar />
     </>
   );

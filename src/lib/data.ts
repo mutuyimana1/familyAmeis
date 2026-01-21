@@ -131,6 +131,30 @@ export const testimonials = [
     rating: 5,
     comment: 'Mugisha ndagira ngo mbashimire ubufasha mwampaye.Nyuma yo kubasaba inama yuko nakakira kuba narasanze umugabo ansha inyuma kumuturanyi wacu rwose inama nagiriwe Nakuyemo byinshi ndetse ngerageza kubishyira mubikorwa pe kandi ubu bya gender neza!umugabo Namusabye Ikiganiro turaganira ntuje rwose ansaba imbabazi ndamwumva ubu ntakibazo!Mugisha ndagushimira cyaneeeee kukumenya ni Ibyagaciro kuko wambaye hafi pe ndashimira nabavandimwe tubana muri FAAR gusa nkasaba ngo niba umuntu asabye inama aba ababaye Kandi asaba inama kuko byamurenze,tumufashe Tutamuhutaje cg ngo tumurimireho amasinde kuko uyu munsi niwe ejo ni wowe!Kubabarira rwose Biraruhura. Warakoze cyanee Mugisha uri Umuhanga pee!',
   },
+  {
+    id: 4,
+    name: 'Uwamahoro Peace',
+    location: 'Rwamagana',
+    image: 'testimonial-2',
+    rating: 5,
+    comment: 'Mugisha uraho neza!Ndashimira inama uduha,nkunda inama mutugira,ndi umuhore wubatse nanjye ndashimira ko ubu nungutse byinshi mubijyanye no kubaka umuryango. Mwrakoze cyane',
+  },
+  {
+    id: 5,
+    name: 'Dativa',
+    location: 'Kigali',
+    image: 'testimonial-2',
+    rating: 5,
+    comment: 'Muduha inama zitwubaka kdi zingira kamaro mu kubaka urugo rwuje ibyiza Nyagasani ajye abaha umugisha nkuko izina ryanyu ribivuga,ubu iwanjye habaye paradizo! Kandi mukimereze aho',
+  },
+  {
+    id:6,
+    name: 'Damiel',
+    location: 'Muhanga',
+    image: 'testimonial-2',
+    rating: 5,
+    comment: 'Muraho neza! Nishimira ko muduha inama zo kuduhugura mumiryango! Nukuri mwarakoze cyane! Nanjye ndashimira byumwihariko ko mwampfashije nari ngiye gukora gatanya bikarangira mbivuyemo ubu tukaba tumeranye neza mumuryango! Mwanygishije kwohangana,kubabarira no gutuza kandi byari byarabuze mumubano wacu! Ukwiye ishimwe nukuri.',
+  },
 ];
 
 export const blogPosts = [

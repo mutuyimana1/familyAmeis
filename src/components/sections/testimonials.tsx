@@ -51,7 +51,7 @@ export default function TestimonialsSection() {
                           <Quote className="w-12 h-12 text-accent" />
                           <Tooltip>
                             <TooltipTrigger asChild>
-                              <p className="text-muted-foreground italic flex-grow line-clamp-2 cursor-help">"{testimonial.comment}"</p>
+                              <p className="text-muted-foreground italic flex-grow line-clamp-3 cursor-help">"{testimonial.comment}"</p>
                             </TooltipTrigger>
                             <TooltipContent className="max-w-md">
                               <p className="text-sm">"{testimonial.comment}"</p>
@@ -62,8 +62,8 @@ export default function TestimonialsSection() {
                                 <Image
                                     src={testimonialImage.imageUrl}
                                     alt={`Photo of ${testimonial.name}`}
-                                    width={80}
-                                    height={80}
+                                    width={50}
+                                    height={50}
                                     className="rounded-full mb-4"
                                     data-ai-hint={testimonialImage.imageHint}
                                 />

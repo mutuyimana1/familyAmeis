@@ -1,9 +1,22 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock, Youtube } from 'lucide-react';
 import { services } from '@/lib/data';
 import { ToothIcon } from '@/components/icons';
 import Image from 'next/image';
 import img from "../../assets/images/logo.jpg"
+
+// TikTok Icon Component (lucide-react doesn't have TikTok)
+const TikTokIcon = ({ size = 20 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+  </svg>
+);
 
 const Logo = () => (
     <Link href="/" className="flex items-center gap-2">
@@ -23,11 +36,25 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               Strong family bonds, and marriage preparation for lasting unions.
             </p>
-            <div className="flex items-center gap-4 pt-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook size={20} /></Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Twitter size={20} /></Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram size={20} /></Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Linkedin size={20} /></Link>
+            <div className="flex items-center gap-4 pt-4 flex-wrap">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="TikTok" title="TikTok">
+                  <TikTokIcon size={20} />
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Facebook" title="Facebook">
+                  <Facebook size={20} className="w-5 h-5" />
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="LinkedIn" title="LinkedIn">
+                  <Linkedin size={20} className="w-5 h-5" />
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Instagram" title="Instagram">
+                  <Instagram size={20} className="w-5 h-5" />
+                </Link>
+                <Link href="https://x.com/DesAdultes" target="_blank" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="X (Twitter)" title="X (Twitter)">
+                  <Twitter size={20} className="w-5 h-5" />
+                </Link>
+                <Link href="https://youtube.com/@amisdelafamilles?si=U-UyczYKkqb40iG4" target="_blank" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="YouTube" title="YouTube">
+                  <Youtube size={20} className="w-5 h-5" />
+                </Link>
             </div>
           </div>
 
