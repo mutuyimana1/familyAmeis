@@ -37,16 +37,16 @@ export default function Footer() {
               Strong family bonds, and marriage preparation for lasting unions.
             </p>
             <div className="flex items-center gap-4 pt-4 flex-wrap">
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="TikTok" title="TikTok">
+                <Link href="https://vm.tiktok.com/ZS9emm65S9rKd-7NHdr/" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="TikTok" title="TikTok">
                   <TikTokIcon size={20} />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Facebook" title="Facebook">
+                {/* <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Facebook" title="Facebook">
                   <Facebook size={20} className="w-5 h-5" />
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="LinkedIn" title="LinkedIn">
+                </Link> */}
+                <Link href="https://www.linkedin.com/in/amis-de-la-famille-rwanda-4003bb389" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="LinkedIn" title="LinkedIn">
                   <Linkedin size={20} className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Instagram" title="Instagram">
+                <Link href="https://www.instagram.com/af_rwanda?igsh=MW9sdHI2eTJ3ZDM5" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="Instagram" title="Instagram">
                   <Instagram size={20} className="w-5 h-5" />
                 </Link>
                 <Link href="https://x.com/DesAdultes" target="_blank" className="text-muted-foreground hover:text-primary transition-colors inline-flex" aria-label="X (Twitter)" title="X (Twitter)">
