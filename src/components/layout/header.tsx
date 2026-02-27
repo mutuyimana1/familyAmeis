@@ -92,22 +92,22 @@ export default function Header() {
           // onMouseLeave={() => setActiveMenu(null)}
         >
           {/* TOP-LEVEL LINK */}
-          {!link.submenu ? (
+          {/* {!link.submenu ? ( */}
             <Link
               href={link.href}
               className="font-medium text-foreground hover:text-primary transition-colors flex items-center gap-1"
             >
               {link.name}
             </Link>
-          ) : (
-            <span className="font-medium text-foreground flex items-center gap-1 cursor-pointer">
-              {link.name}
-              <span className="text-xs">▼</span>
-            </span>
-          )}
+          {/* // ) : (
+          //   <span className="font-medium text-foreground flex items-center gap-1 cursor-pointer">
+          //     {link.name}
+          //     <span className="text-xs">▼</span>
+          //   </span>
+          // )} */}
 
           {/* SUBMENU */}
-          {link.submenu && activeMenu === link.name && (
+          {/* {link.submenu && activeMenu === link.name && (
             <div className="absolute left-0 mt-3 w-64 bg-white shadow-xl border rounded-lg py-3 z-50">
               <Link
                 href={link.href}
@@ -133,7 +133,7 @@ export default function Header() {
                 ))}
               </ul>
             </div>
-          )}
+          )} */}
         </div>
       ))}
     </nav>

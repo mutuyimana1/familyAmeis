@@ -8,39 +8,39 @@ export const navLinks = [
   {
     name: "Services",
     href: "/services",
-    submenu: [
-      { name: "Relationship & Family Problems", href: "/services/relationship-family-problems" },
-      { name: "Life and Relationship Mentorship", href: "/services/life-relationship-mentorship" },
-      { name: "Separation and Divorce Adjustment", href: "/services/separation-divorce-adjustment" },
-      { name: "Premarital Education", href: "/services/premarital-education" },
-      { name: "Sexual Difficulties", href: "/services/sexual-difficulties" },
-      { name: "Romantic relationship skills", href: "/services/romantic-skills" },
-      { name: "Parenting skills", href: "/services/parenting-skills" },
-      { name: "Psychotherapy", href: "/services/psychotherapy" },
-    ],
+    // submenu: [
+    //   { name: "Relationship & Family Problems", href: "/services/relationship-family-problems" },
+    //   { name: "Life and Relationship Mentorship", href: "/services/life-relationship-mentorship" },
+    //   { name: "Separation and Divorce Adjustment", href: "/services/separation-divorce-adjustment" },
+    //   { name: "Premarital Education", href: "/services/premarital-education" },
+    //   { name: "Sexual Difficulties", href: "/services/sexual-difficulties" },
+    //   { name: "Romantic relationship skills", href: "/services/romantic-skills" },
+    //   { name: "Parenting skills", href: "/services/parenting-skills" },
+    //   { name: "Psychotherapy", href: "/services/psychotherapy" },
+    // ],
   },
 
   {
     name: "News",
     href: "/news",
-    submenu: [
-      { name: "In Rwanda", href: "/news/rwanda" },
-      { name: "Abroad", href: "/news/abroad" },
-      { name: "Family", href: "/news/family" },
-      { name: "Entertainment news updates", href: "/news/entertainment" },
-      { name: "Innovation", href: "/news/innovation" },
-      { name: "Communications", href: "/news/communications" },
-    ],
+    // submenu: [
+    //   { name: "Advertisment", href: "/news/rwanda" },
+    //   { name: "Abroad", href: "/news/abroad" },
+    //   { name: "Family", href: "/news/family" },
+    //   { name: "Entertainment news updates", href: "/news/entertainment" },
+    //   { name: "Innovation", href: "/news/innovation" },
+    //   { name: "Communications", href: "/news/communications" },
+    // ],
   },
 
   {
     name: "Blog",
     href: "/blog",
-    submenu: [
-      { name: "Topic of the day", href: "/blog/topic-of-the-day" },
-      { name: "Family counseling", href: "/blog/family-counseling" },
-      { name: "Conclusion for the topic", href: "/blog/conclusion" },
-    ],
+    // submenu: [
+    //   { name: "Topic of the day", href: "/blog/topic-of-the-day" },
+    //   { name: "Family counseling", href: "/blog/family-counseling" },
+    //   { name: "Conclusion for the topic", href: "/blog/conclusion" },
+    // ],
   },
 
   { name: "About Us", href: "/about" },
@@ -148,7 +148,7 @@ export const testimonials = [
     comment: 'Muduha inama zitwubaka kdi zingira kamaro mu kubaka urugo rwuje ibyiza Nyagasani ajye abaha umugisha nkuko izina ryanyu ribivuga,ubu iwanjye habaye paradizo! Kandi mukimereze aho',
   },
   {
-    id:6,
+    id: 6,
     name: 'Damiel',
     location: 'Muhanga',
     image: 'testimonial-2',
